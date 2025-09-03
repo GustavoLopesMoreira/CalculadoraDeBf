@@ -21,37 +21,41 @@
         </section>
 
         <section id="dadosCorporais">
-            <h1>Dados Corporais</h1>
-            <form>
-                <section class="formulario">
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade" min="0" placeholder="Ex: 21" required>
-                </section>
-
-                <section class="formulario">
-                    <label for="altura">Altura:</label>
-                    <input type="number" id="altura" name="altura" min="0" step="1" placeholder="Ex: 180" required>
-                    <label for="altura">(cm)</label>
-                </section>
-
-                <section class="formulario">
-                    <label for="peso">Peso :</label>
-                    <input type="number" id="peso" name="peso" min="0" step="1" placeholder="Ex: 80" required>
-                    <label for="peso">(kg)</label>
-                </section>
-
-                <section class="formulario">
-                    <label for="cintura">Cintura:</label>
-                    <input type="number" id="cintura" name="cintura" min="0" step="1" placeholder="Ex: 92" required>
-                    <label for="cintura">(cm)</label>
-                </section>
-
-                <section class="formulario">
-                    <label for="pescoco">Pescoço:</label>
-                    <input type="number" id="pescoco" name="pescoco" min="0" step="1" placeholder="Ex: 42" required>
-                    <label for="pescoco">(cm)</label>
-                </section>
-            </form>
+            <div id="formulario">
+                <h1>Dados Corporais</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" id="altura" name="altura" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" name="peso" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cintura">Cintura (cm):</label>
+                        <input type="number" id="cintura" name="cintura" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pescoco">Pescoço (cm):</label>
+                        <input type="number" id="pescoco" name="pescoco" step="0.1" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section id="resultado">
+            <h1>Resultados da Avaliação</h1>
+            <div id="resultadoValores">
+                <div class="valores">Percentual de Gordura (BF)</div>
+                <div class="valores">Massa Magra</div>
+                <div class="valores">Massa Gorda</div>
+                <div class="valores">Taxa Metabólica Basal</div>
+            </div>
         </section>
     </main>
     <footer>
