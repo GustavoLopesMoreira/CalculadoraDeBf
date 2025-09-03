@@ -11,18 +11,51 @@
 
 <body>
     <header>
-
+        <h1>Calculadora de BF</h1>
     </header>
     <main>
-        <section>
-            
+        <section id="sexos">
+            <button>Homem</button>
+            <h1>Selecione seu sexo</h1>
+            <button>Mulher</button>
         </section>
-        <section>
 
+        <section id="dadosCorporais">
+            <h1>Dados Corporais</h1>
+            <form>
+                <section class="formulario">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="0" placeholder="Ex: 21" required>
+                </section>
+
+                <section class="formulario">
+                    <label for="altura">Altura:</label>
+                    <input type="number" id="altura" name="altura" min="0" step="1" placeholder="Ex: 180" required>
+                    <label for="altura">(cm)</label>
+                </section>
+
+                <section class="formulario">
+                    <label for="peso">Peso :</label>
+                    <input type="number" id="peso" name="peso" min="0" step="1" placeholder="Ex: 80" required>
+                    <label for="peso">(kg)</label>
+                </section>
+
+                <section class="formulario">
+                    <label for="cintura">Cintura:</label>
+                    <input type="number" id="cintura" name="cintura" min="0" step="1" placeholder="Ex: 92" required>
+                    <label for="cintura">(cm)</label>
+                </section>
+
+                <section class="formulario">
+                    <label for="pescoco">Pescoço:</label>
+                    <input type="number" id="pescoco" name="pescoco" min="0" step="1" placeholder="Ex: 42" required>
+                    <label for="pescoco">(cm)</label>
+                </section>
+            </form>
         </section>
     </main>
     <footer>
-        
+
     </footer>
     <script src="script.js"></script>
 </body>

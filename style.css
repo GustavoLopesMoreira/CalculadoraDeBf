@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px black;
+}
+
+header {
+    margin: 30px 10px;
+    text-shadow: 3px 3px 4px black;
+    font-size: 25px;
+    color: white;
+}
+
+main {
+    background-color: #217373;
+    display: flex;
+    width: 100vw;
+    height: 700px;
+    flex-direction: column;
+}
+
+#sexos {
+    display: flex;
+    justify-content: space-around;
+    background-color: #173540;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+#sexos h1 {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    text-shadow: 2px 2px 3px black;
+}
+#sexos button {
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #173540;
+}
+
+#dadosCorporais {
+    text-align: center;
+    height: 500px;
+    background-color: #161F30;
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+
+#dadosCorporais h1 {
+    color: white;
+    padding: 20px;
+    text-shadow: 3px 3px 4px black;
+    font-size: 35px;
+}
+
+form {
+    text-align: center;
+    
+    font-size: 25px;
+}
+
+input {
+    width: 70px;
+}
+#dadosCorporais section{
+    padding: 5px;
+}
