@@ -24,7 +24,7 @@ header {
 }
 
 main {
-    background-color: #217373c5;
+    background-color: #000000e0;
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -33,7 +33,7 @@ main {
 #sexos {
     display: flex;
     justify-content: space-around;
-    background-color: #173540c5;
+    background-color: #2b2b2bc5;
     padding: 20px;
     margin: 10px 0px 10px 0px;
     text-align: center;
@@ -51,13 +51,13 @@ main {
     padding: 8px;
     cursor: pointer;
     color: white;
-    background-color: #173540;
+    background-color: #3a3a3a;
 }
 
 #dadosCorporais {
     text-align: center;
     height: 500px;
-    background-color: #161f30c7;
+    background-color: #1a1a1ac5;
     color: white;
 
 }
@@ -71,7 +71,6 @@ main {
 }
 
 form {
-    text-align: center;
     font-size: 25px;
 }
 
@@ -79,12 +78,10 @@ input {
     width: 70px;
 }
 
-#dadosCorporais section {
-    padding: 5px;
-}
+
 
 #resultado {
-    background-color: #173540c5;
+    background-color: #2b2b2bc5;
     color: white;
     display: flex;
     flex-direction: column;
