@@ -15,45 +15,81 @@
     </header>
     <main>
         <section id="sexos">
-            <button d="bh" onclick="aparecerFormulario()">Homem</button>
-            <h1>Selecione seu sexo</h1>
-            <button>Mulher</button>
+            <button onclick="aparecertextoh()">Homem</button>
+            <h1>Selecione seu <span style="color: red;">Sexo</span></h1>
+            <button onclick="aparecertextom()">Mulher</button>
         </section>
 
         <section id="dadosCorporais">
-                <h1>Dados Corporais</h2>
-                    <p  id="teste">aa</p>
-                    <form id="formulario">
-                        <div class="form-group">
-                            <label for="idade">Idade:</label>
-                            <input type="number" id="idade" name="idade" min="0" required>
-                            <label for="idade">(anos)</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="altura">Altura:</label>
-                            <input type="number" id="altura" name="altura" step="0.1" required>
-                            <label for="altura">(cm)</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="peso">Peso:</label>
-                            <input type="number" id="peso" name="peso" step="0.1" required>
-                            <label for="peso">(kg)</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="cintura">Cintura:</label>
-                            <input type="number" id="cintura" name="cintura" step="0.1" required>
-                            <label for="cintura">(cm)</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="pescoco">Pescoço:</label>
-                            <input type="number" id="pescoco" name="pescoco" step="0.1" required>
-                            <label for="pescoco">(cm)</label>
-                        </div>
-                        <button type="submit">Enviar</button>
+            <h1>Dados <span style="color: red;">Corporais</span></h2>
+                <div id="formularioh">
+                    <div class="form-grouph">
+                        <label for="idadeh">Idade:</label>
+                        <input type="number" id="idadeh" name="idadeh" min="0" required>
+                        <label for="idadeh">(anos)</label>
+                    </div>
+                    <div class="form-grouph">
+                        <label for="alturah">Altura:</label>
+                        <input type="number" id="alturah" name="alturah" step="0.1" required>
+                        <label for="alturah">(cm)</label>
+                    </div>
+                    <div class="form-grouph">
+                        <label for="pesoh">Peso:</label>
+                        <input type="number" id="pesoh" name="pesoh" step="0.1" required>
+                        <label for="pesoh">(kg)</label>
+                    </div>
+                    <div class="form-grouph">
+                        <label for="cinturah">Cintura:</label>
+                        <input type="number" id="cinturah" name="cinturah" step="0.1" required>
+                        <label for="cinturah">(cm)</label>
+                    </div>
+                    <div class="form-grouph">
+                        <label for="pescocoh">Pescoço:</label>
+                        <input type="number" id="pescocoh" name="pescocoh" step="0.1" required>
+                        <label for="pescocoh">(cm)</label>
+                    </div>
+                    <button type="submit">Enviar</button>
                     </form>
+                </div>
+
+                <div id="formulariom">
+                    <div class="form-groupm">
+                        <label for="idadem">Idade:</label>
+                        <input type="number" id="idadem" name="idadem" min="0" required>
+                        <label for="idadem">(anos)</label>
+                    </div>
+                    <div class="form-groupm">
+                        <label for="alturam">Altura:</label>
+                        <input type="number" id="alturam" name="alturam" step="0.1" required>
+                        <label for="alturam">(cm)</label>
+                    </div>
+                    <div class="form-groupm">
+                        <label for="pesom">Peso:</label>
+                        <input type="number" id="pesom" name="pesom" step="0.1" required>
+                        <label for="pesom">(kg)</label>
+                    </div>
+                    <div class="form-groupm">
+                        <label for="cinturam">Cintura:</label>
+                        <input type="number" id="cinturam" name="cinturam" step="0.1" required>
+                        <label for="cinturam">(cm)</label>
+                    </div>
+                    <div class="form-groupm">
+                        <label for="pescocom">Pescoço:</label>
+                        <input type="number" id="pescocom" name="pescocom" step="0.1" required>
+                        <label for="pescocom">(cm)</label>
+                    </div>
+                    <div class="form-groupm">
+                        <label for="quadrilm">Quadril:</label>
+                        <input type="number" id="quadrilm" name="quadrilm" step="0.1" required>
+                        <label for="quadrilm">(cm)</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                </div>
         </section>
         <section id="resultado">
-            <h1>Resultados da Avaliação</h1>
+            <h1>Resultados da <span style="color: red;">Avaliação</span></h1>
             <div id="resultadoValores">
                 <div class="valores">Percentual de Gordura (BF)</div>
                 <div class="valores">Massa Magra</div>
