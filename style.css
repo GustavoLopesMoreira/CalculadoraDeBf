@@ -5,6 +5,7 @@
 }
 
 :root {
+    --cor0: #0e0e0e;
     --cor1: #000000;
     --cor2: #1f1f1f;
     --cor3: #313131;
@@ -14,7 +15,7 @@
 }
 
 body {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
 }
 
 header {
@@ -26,6 +27,13 @@ header {
 
 main {
     background-color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 100px;
+     overflow: hidden;
+
 }
 
 #sexos {
@@ -49,6 +57,7 @@ main {
     cursor: pointer;
     color: white;
     background-color: var(--cor4);
+    box-shadow: 5px 3px 3px black;
 }
 
 #dadosCorporais {
@@ -82,6 +91,7 @@ main {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid black;
+    box-shadow: 5px 3px 3px black;
     background-color: var(--cor3);
 }
 
@@ -89,21 +99,27 @@ main {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid black;
+    box-shadow: 5px 3px 3px black;
     background-color: var(--cor3);
 }
 
 #resultado {
-    background-color: var(--cor2);
-    color: white;
     display: flex;
     flex-direction: column;
+    background-color: var(--cor2);
+    color: white;
     align-items: center;
+    text-align: center;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
 #resultado h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 4px black;
     font-size: 30px;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #resultadoValores {
@@ -113,8 +129,145 @@ main {
 }
 
 .valores {
-    margin: 10px;
+    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid black;
+    box-shadow: 5px 3px 3px black;
     background-color: var(--cor3);
+}
+
+@media (min-width: 720px) and (max-width: 1025px) {
+    header {
+        margin: 30px 0px 30px 0px;
+        font-size: 30px;
+    }
+
+    #sexos {
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+
+    #sexos h1 {
+        font-size: 35px;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    #dadosCorporais {
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+
+    #dadosCorporais h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .form-grouph {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .form-groupm {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    #resultado {
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+
+    #resultado h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    #resultadoValores {
+        margin-bottom: 10px;
+    }
+
+    .valores {
+        border-radius: 5px;
+        font-size: 18px;
+    }
+}
+
+
+
+@media (min-width:1025px) {
+    header {
+      
+        font-size: 35px;
+    }
+    main{
+        max-width: 1000px;
+        border-radius: 60px;
+    }
+    #sexos {
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+
+    #sexos h1 {
+        font-size: 45px;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    #dadosCorporais {
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+
+    #dadosCorporais h1 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .form-grouph {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .form-groupm {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    #resultado {
+        padding: 35px;
+        margin-bottom: 30px;
+        
+    }
+
+    #resultado h1 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    #resultadoValores {
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .valores {
+        border-radius: 5px;
+         font-size: 20px;
+    }
 }
