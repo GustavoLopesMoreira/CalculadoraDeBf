@@ -23,11 +23,7 @@
         <section id="dadosCorporais">
             <h1>Dados Corporais</h2>
                 <div id="formularioh">
-                    <div class="form-grouph">
-                        <label for="idadeh">Idade:</label>
-                        <input type="number" id="idadeh" name="idadeh" min="0" required>
-                        <label for="idadeh">(anos)</label>
-                    </div>
+                    <h1>Homem</h1>
                     <div class="form-grouph">
                         <label for="alturah">Altura:</label>
                         <input type="number" id="alturah" name="alturah" step="0.1" required>
@@ -48,16 +44,12 @@
                         <input type="number" id="pescocoh" name="pescocoh" step="0.1" required>
                         <label for="pescocoh">(cm)</label>
                     </div>
-                    <button class="button" type="submit">Enviar</button>
+                    <button onclick="calcularBfM()" class="button" type="submit">Enviar</button>
                     </form>
                 </div>
 
                 <div id="formulariom">
-                    <div class="form-groupm">
-                        <label for="idadem">Idade:</label>
-                        <input type="number" id="idadem" name="idadem" min="0" required>
-                        <label for="idadem">(anos)</label>
-                    </div>
+                    <h1>Mulher</h1>
                     <div class="form-groupm">
                         <label for="alturam">Altura:</label>
                         <input type="number" id="alturam" name="alturam" step="0.1" required>
@@ -91,10 +83,18 @@
         <section id="resultado">
             <h1>Resultados da Avaliação</h1>
             <div id="resultadoValores">
-                <div class="valores">Percentual de Gordura (BF)</div>
-                <div class="valores">Massa Magra</div>
-                <div class="valores">Massa Gorda</div>
-                <div class="valores">Taxa Metabólica Basal</div>
+                <div class="valores">
+                    <h3>Percentual de Gordura (BF)</h3>
+                    <p id="bf"></p>
+                </div>
+                <div class="valores">
+                    <h3>Massa Magra</h3>
+                    <p id="mm"></p>
+                </div>
+                <div class="valores">
+                    <h3>Massa Gorda</h3>
+                    <p id="mg"></p>
+                </div>
             </div>
         </section>
     </main>
