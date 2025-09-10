@@ -19,7 +19,8 @@
             <h1>Selecione seu Sexo</h1>
             <button class="button" onclick="aparecertextom()">Mulher</button>
         </section>
-
+        
+        </section>
         <section id="dadosCorporais">
             <h1>Dados Corporais</h2>
                 <div id="formularioh">
@@ -44,7 +45,7 @@
                         <input type="number" id="pescocoh" name="pescocoh" step="0.1" required>
                         <label for="pescocoh">(cm)</label>
                     </div>
-                    <button onclick="calcularBfM()" class="button" type="submit">Enviar</button>
+                    <button onclick="calcularBfH()" class="button" type="submit">Enviar</button>
                     </form>
                 </div>
 
@@ -75,25 +76,28 @@
                         <input type="number" id="quadrilm" name="quadrilm" step="0.1" required>
                         <label for="quadrilm">(cm)</label>
                     </div>
-                    <button class="button" type="submit">Enviar</button>
+                    <button onclick="calcularBfM()" class="button" type="submit">Enviar</button>
                     </form>
                 </div>
                 </div>
         </section>
         <section id="resultado">
-            <h1>Resultados da Avaliação</h1>
+            <h1>Resultado</h1>
             <div id="resultadoValores">
                 <div class="valores">
                     <h3>Percentual de Gordura (BF)</h3>
                     <p id="bf"></p>
+                    <p id="bf1"></p>
                 </div>
                 <div class="valores">
                     <h3>Massa Magra</h3>
                     <p id="mm"></p>
+                    <p id="mm1"></p>
                 </div>
                 <div class="valores">
                     <h3>Massa Gorda</h3>
                     <p id="mg"></p>
+                    <p id="mg1"></p>
                 </div>
             </div>
         </section>
