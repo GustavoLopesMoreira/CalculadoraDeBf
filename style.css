@@ -5,34 +5,34 @@
 }
 
 :root {
-    --cor0: #0e0e0e;
-    --cor1: #000000;
-    --cor2: #1f1f1f;
-    --cor3: #313131;
-    --cor4: #3b3b3b;
+    
+    --cor1: #2b2e46;
+    --cor2: #42455e;
+    --cor3: #595b75;
+    --cor4: #6f728d;
     --texto-cor1: #ffffff;
-    --texto-cor2: #f80909c5;
+    --texto-cor2: #ffffffc5;
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
 }
 
 header {
     text-align: center;
     margin: 25px 0px 25px 0px;
     font-size: 20px;
-    color: white;
+    color: var(--texto-cor1);
 }
 
 main {
-    background-color: var(--cor1);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     margin-bottom: 100px;
-     overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -41,11 +41,11 @@ main {
     justify-content: space-around;
     background-color: var(--cor2);
     padding: 25px;
-    margin-bottom: 20px;
+    border: 3px solid var(--cor1);
 }
 
 #sexos h1 {
-    color: white;
+    color: var(--texto-cor1);
     font-size: 20px;
     text-shadow: 2px 2px 3px black;
 }
@@ -54,7 +54,7 @@ main {
     border-radius: 8px;
     padding: 4px;
     cursor: pointer;
-    color: white;
+    color: var(--texto-cor2);
     background-color: var(--cor4);
     box-shadow: 5px 3px 3px black;
     font-size: 10px;
@@ -64,15 +64,16 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--cor2);
-    color: white;
+    color: var(--texto-cor1);
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin-bottom: 20px;
+    border: 3px solid var(--cor1);
+    border-top: 0px;
 }
 
 #dadosCorporais h1 {
-    color: white;
+    color: var(--texto-cor1);
     text-align: center;
     text-shadow: 3px 3px 4px black;
     font-size: 20px;
@@ -86,7 +87,7 @@ main {
 #formulariom {
     display: none;
     font-size: 15px;
-} 
+}
 
 .form-grouph {
     border-radius: 5px;
@@ -112,15 +113,17 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--cor2);
-    color: white;
+    color: var(--texto-cor1);
     align-items: center;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
+    border: 3px solid var(--cor1);
+    border-top: 0px;
 }
 
 #resultado h1 {
-    color: white;
+    color: var(--texto-cor1);
     text-align: center;
     text-shadow: 3px 3px 4px black;
     font-size: 20px;
@@ -211,13 +214,15 @@ main {
 
 @media (min-width:1025px) {
     header {
-      
+
         font-size: 35px;
     }
-    main{
+
+    main {
         max-width: 1000px;
         border-radius: 60px;
     }
+
     #sexos {
         padding: 35px;
         margin-bottom: 30px;
@@ -259,7 +264,7 @@ main {
     #resultado {
         padding: 35px;
         margin-bottom: 30px;
-        
+
     }
 
     #resultado h1 {
@@ -275,6 +280,6 @@ main {
 
     .valores {
         border-radius: 5px;
-         font-size: 20px;
+        font-size: 20px;
     }
 }

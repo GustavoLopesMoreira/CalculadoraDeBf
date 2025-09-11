@@ -30,15 +30,15 @@ function calcularBfH() {
   } 
 
   let pesoh = parseFloat(document.getElementById("pesoh").value);
-  if (isNaN(pesom)){
+  if (isNaN(pesoh)){
     alert("Por favor, preencha seu peso!");
     return; 
   }
 
-  if ((pescocoh - cinturah) <= 0){
-    alert("Valores incorretos");
-    return; 
-  }
+  if ((cinturahIn - pescocohIn) <= 0) {
+  alert("Valores incorretos: a medida da cintura deve ser maior que a do pescoço!");
+  return; 
+}
 
   let formulabfh = 86.010 * Math.log10(cinturahIn - pescocohIn) - 70.041 * Math.log10(alturahIn) + 36.76;
 
