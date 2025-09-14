@@ -15,7 +15,7 @@
 
 body {
     background: black url(fotos/photo-1526506118085-60ce8714f8c5.jpg) fixed no-repeat center top;
-    background-size: 1200px 1000px;
+    background-size: 1050px 1000px;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
     text-align: center;
     font-size: 20px;
     color: var(--texto-cor1);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 3px 2px 1px  rgb(0, 0, 0);
 }
 
 main {
@@ -46,7 +46,7 @@ main {
 #sexos h1 {
     font-size: 20px;
     color: var(--texto-cor1);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 3px 2px 1px rgb(0, 0, 0);
 }
 
 .button {
@@ -56,7 +56,7 @@ main {
     color: var(--texto-cor2);
     background-color: var(--cor4);
     cursor: pointer;
-    box-shadow: 5px 3px 3px black;
+    box-shadow: 3px 2px 1px black;
 }
 
 #dadosCorporais {
@@ -76,16 +76,18 @@ main {
     font-size: 20px;
     text-align: center;
     color: var(--texto-cor1);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 3px 2px 1px rgb(0, 0, 0);
 }
 
-#formularioh {
-    font-size: 15px;
+#formularioh {}
+
+label {
+    font-size: 11px;
 }
 
 #formulariom {
     display: none;
-    font-size: 15px;
+
 }
 
 .form-grouph,
@@ -96,7 +98,7 @@ main {
     border-radius: 5px;
     font-size: 10px;
     background-color: var(--cor3);
-    box-shadow: 5px 3px 3px black;
+    box-shadow: 3px 2px 1px black;
 }
 
 #resultado {
@@ -117,7 +119,7 @@ main {
     font-size: 20px;
     text-align: center;
     color: var(--texto-cor1);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 3px 2px 1px rgb(0, 0, 0);
 }
 
 #resultadoValores {
@@ -133,12 +135,74 @@ main {
     border-radius: 5px;
     font-size: 10px;
     background-color: var(--cor3);
-    box-shadow: 5px 3px 3px black;
+    box-shadow: 3px 2px 1px black;
 }
 
 
-@media (min-width: 720px) and (max-width: 1025px) {}
+@media (min-width: 720px) and (max-width: 1025px) {
+    header {
+        font-size: 25px;
+    }
+
+    #sexos h1 {
+        font-size: 25px;
+    }
+
+    .button {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    #dadosCorporais h1 {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    #resultado h1 {
+        font-size: 25px;
+    }
+
+    .valores {
+        font-size: 15px;
+    }
+}
 
 
 
-@media (min-width:1025px) {}
+@media (min-width:1025px) {
+    main {
+        max-width: 1000px;
+    }
+
+    header {
+        font-size: 30px;
+    }
+
+    #sexos h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    #dadosCorporais h1 {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #resultado h1 {
+        font-size: 30px;
+    }
+
+    .valores {
+        font-size: 20px;
+    }
+}
