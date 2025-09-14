@@ -14,9 +14,8 @@
 }
 
 body {
-    background-image: url(fotos/photo-1526506118085-60ce8714f8c5.jpg);
-    background-repeat: no-repeat;
-    background-size: 800px;
+    background: black url(fotos/photo-1526506118085-60ce8714f8c5.jpg) fixed no-repeat center top;
+    background-size: 1200px 1000px;
 }
 
 header {
